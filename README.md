@@ -39,7 +39,7 @@ Beyond reliable scoring, DeEAR enables fair benchmarking and targeted data curat
 The DeEAR framework follows a four-stage pipeline designed to decompose, model, and ultimately align the abstract concept of expressiveness with human preference.
 
 <p align="center">
-  <img src="assets/Architecture.png" alt="DeEAR Framework Diagram" width="800"/>
+  <img src="assets/Architecture.png" alt="DeEAR Framework Diagram" width="45%"/>
   <br>
   <em>Figure 1: The DeEAR Framework. (A) The training pipeline involves four stages: decomposition, sub-dimension modeling, learning a fusion function, and distillation. (B) Applications include data filtering and serving as a reward model.</em>
 </p>
