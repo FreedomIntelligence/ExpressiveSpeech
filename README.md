@@ -4,12 +4,12 @@
 
 ### Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment
 
-<p align="center">
-  <a href="https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech">
-    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-FFD03C?style=flat&logo=huggingface&logoColor=black" alt="Dataset">
-  </a>
-</p>
+</div>
 
+<div align="center">
+<h4>
+  🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech" target="_blank">Dataset</a> | 💻 <a href="https://github.com/FreedomIntelligence/ExpressiveSpeech" target="_blank">Code</a>
+</h4>
 </div>
 
 
