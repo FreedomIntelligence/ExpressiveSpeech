@@ -20,7 +20,7 @@ Grounded in phonetics and psychology, DeEAR evaluates speech across three core d
 
 Beyond reliable scoring, DeEAR enables fair benchmarking and targeted data curation. We applied DeEAR to build **ExpressiveSpeech**, a high-quality dataset, and used it to fine-tune an S2S model, which improved its overall expressiveness score from 2.0 to 23.4 (on a 100-point scale).
 
----
+
 
 ## 🚀 Key Features
 
@@ -32,7 +32,7 @@ Beyond reliable scoring, DeEAR enables fair benchmarking and targeted data curat
     2.  **Evaluation-Driven Data Curation**: Efficiently filters and curates high-quality, expressive speech datasets.
 *   **Release of ExpressiveSpeech Dataset**: A new large-scale, bilingual (English-Chinese) dataset containing ~14,000 utterances of highly expressive speech.
 
----
+
 
 ## 🔧 Framework Overview
 
@@ -44,7 +44,7 @@ The DeEAR framework follows a four-stage pipeline designed to decompose, model, 
   <em>Figure 1: The DeEAR Framework. (A) The training pipeline involves four stages: decomposition, sub-dimension modeling, learning a fusion function, and distillation. (B) Applications include data filtering and serving as a reward model.</em>
 </p>
 
----
+
 
 
 ### Supplementary Material
