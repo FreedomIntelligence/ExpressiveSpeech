@@ -1,4 +1,13 @@
-# DeEAR - Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment
+<div align="center">
+
+# DeEAR
+
+## Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment
+
+</div>
+
+
+[![Dataset](https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech)]
 
 
 ### Supplementary Material
