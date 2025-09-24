@@ -2,24 +2,21 @@
 
 # DeEAR
 
-## Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment
-
-</div>
-
+### Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment
 
 <p align="center">
   <a href="链接到您的论文">
-    <img src="https://img.shields.io/badge/arXiv-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper">
+    <img src="https://img.shields.io/badge/arXiv-Paper-b31b1b.svg?style=flat&logo=arxiv" alt="Paper">
   </a>
-  &nbsp;&nbsp;
   <a href="https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech">
-    <img src="https://img.shields.io/badge/Dataset-FFD03C?style=for-the-badge&logo=huggingface&logoColor=black" alt="Dataset">
+    <img src="https://img.shields.io/badge/Hugging%20Face-Dataset-FFD03C?style=flat&logo=huggingface&logoColor=black" alt="Dataset">
   </a>
-  &nbsp;&nbsp;
   <a href="链接到您的代码">
-    <img src="https://img.shields.io/badge/Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Code">
+    <img src="https://img.shields.io/badge/GitHub-Code-181717?style=flat&logo=github" alt="Code">
   </a>
 </p>
+
+</div>
 
 
 ### Supplementary Material
