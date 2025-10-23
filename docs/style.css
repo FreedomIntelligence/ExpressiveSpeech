@@ -176,7 +176,7 @@ body{
   overflow: hidden;
 }
 .demo-row:nth-child(odd):not(.demo-head){
-  background: color-mix(in srgb, var(--card) 92%, var(--accent));
+  background: var(--card);
 }
 .demo-row:hover{
   transform: translateY(-2px);
