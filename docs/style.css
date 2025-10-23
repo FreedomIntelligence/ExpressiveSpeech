@@ -321,3 +321,20 @@ audio{
 @media (min-width: 800px){
   body{ font-size: 17px; }
 }
+
+/* 统一 Emoji / IMG 图标的尺寸与间距 */
+.cta .emoji,
+.cta .icon{
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  line-height: 1;
+}
+
+/* arXiv 外链 SVG 在深色按钮上更清晰（有些是黑字），强制变为浅色 */
+.cta .icon{
+  filter: brightness(0) invert(1);
+}

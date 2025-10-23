@@ -38,20 +38,32 @@
           <sup>2</sup>Li Auto Inc., China
         </p>
 
-        <nav class="cta-group" aria-label="resource links">
-          <a class="cta" target="_blank" href="https://github.com/FreedomIntelligence/ExpressiveSpeech">
-            <i class="fa-brands fa-github"></i><span>Github</span>
-          </a>
-          <a class="cta" target="_blank" href="#">
-            <i class="fa-solid fa-file-lines"></i><span>Paper</span>
-          </a>
-          <a class="cta" target="_blank" href="#">
-            <i class="fa-solid fa-brain"></i><span>Model</span>
-          </a>
-          <a class="cta" target="_blank" href="#">
-            <i class="fa-solid fa-database"></i><span>Dataset</span>
-          </a>
-        </nav>
+            <nav class="cta-group" aria-label="resource links">
+            <!-- GitHub 保持不变 -->
+            <a class="cta" target="_blank" href="https://github.com/FreedomIntelligence/ExpressiveSpeech">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+                <span>Github</span>
+            </a>
+
+            <!-- Paper = arXiv（先用 Wikimedia 的官方 SVG；后面你也可以下载到本地） -->
+            <a class="cta" target="_blank" href="https://arxiv.org/abs/xxxx.xxxxx">
+                <img class="icon" alt="arXiv"
+                    src="https://upload.wikimedia.org/wikipedia/commons/9/95/ArXiv_logo.svg" />
+                <span>arXiv</span>
+            </a>
+
+            <!-- Model = 🤗 -->
+            <a class="cta" target="_blank" href="https://huggingface.co/your-model">
+                <span class="emoji" aria-hidden="true">🤗</span>
+                <span>Model</span>
+            </a>
+
+            <!-- Dataset = 🤗 -->
+            <a class="cta" target="_blank" href="https://huggingface.co/datasets/your-dataset">
+                <span class="emoji" aria-hidden="true">🤗</span>
+                <span>Dataset</span>
+            </a>
+            </nav>
       </div>
       <!-- 底部分隔阴影 -->
       <div class="hero-sep"></div>
