@@ -227,3 +227,86 @@ audio{ width: 100%; outline: none; }
   font-size: 13px;
   margin: 22px 0 0;
 }
+
+/* ====== Bigger & Bolder overrides ====== */
+
+/* 让页面更宽一些（从 1100px 提到 1280px；也可以用 90vw 自适应更宽屏） */
+.page{
+  max-width: 1280px;
+  padding: 40px 24px 56px;  /* 外边距稍加大，更有呼吸感 */
+}
+
+/* 顶部 Hero：标题更大更粗，副标题也更明显 */
+.title{
+  font-size: clamp(48px, 7.2vw, 78px); /* 原 40~64 → 48~78 */
+  font-weight: 900;
+  letter-spacing: .2px;
+}
+.subtitle{
+  font-size: clamp(18px, 2.2vw, 24px); /* 原 16~22 → 18~24 */
+  line-height: 1.55;
+  max-width: 980px;                     /* 文案行宽略更宽 */
+}
+
+/* 作者与单位更容易读 */
+.authors{ font-size: 18px; line-height: 1.9; }
+.affiliations{ font-size: 16px; }
+
+/* 顶部卡片内边距增大，让内容更“撑开” */
+.hero-inner{ padding: 56px 36px 36px; }
+
+/* CTA 胶囊按钮更显眼更粗壮 */
+.cta{
+  padding: 12px 20px;
+  font-size: 15.5px;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(0,0,0,.10);
+}
+.cta i{ font-size: 16px; }
+
+/* Section 卡片增大内边距、标题更粗 */
+.section{
+  padding: 32px 24px 14px;
+}
+.section-title{
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* Demo 表头更大更粗；每行更高、留白更足 */
+.demo-head{
+  font-size: 16px;
+  font-weight: 800;
+  padding: 14px 16px;
+}
+.demo-row{
+  border-radius: 14px;
+}
+.cell{
+  padding: 18px 16px;   /* 原 14x12 → 18x16 */
+  font-size: 16px;      /* 原 14.5 → 16 */
+  line-height: 1.7;
+}
+
+/* 音频控件在不同浏览器可见度更好（宽已100%，这里增大最小高度） */
+audio{
+  min-height: 44px;     /* 更“触屏友好” */
+}
+
+/* 页脚也略放大 */
+.footer{
+  font-size: 14px;
+  margin-top: 28px;
+}
+
+/* 可选：让整体卡片阴影更明显一点（更有“厚度”） */
+.hero,
+.section{
+  box-shadow: 0 16px 44px rgba(0,0,0,.12);
+}
+
+/* 如果你想整体再放大一点点，也可以把 body 的基准字号抬高到 17px */
+@media (min-width: 800px){
+  body{ font-size: 17px; }
+}
