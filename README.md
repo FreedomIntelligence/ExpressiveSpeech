@@ -8,7 +8,7 @@
 
 <div align="center">
 <h4>
-  🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech" target="_blank">Dataset</a> | 🤗 <a href="https://huggingface.co/FreedomIntelligence/DeEAR_Base" target="_blank">Model</a> | 💻 <a href="https://github.com/FreedomIntelligence/ExpressiveSpeech" target="_blank">Code</a>
+  🌐 <a href="https://freedomintelligence.github.io/ExpressiveSpeech/" target="_blank">Project</a> | <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ArXiv_logo_2022.svg" alt="ArXiv Paper" height="12"> Paper</a> | 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech" target="_blank">Dataset</a> | 🤗 <a href="https://huggingface.co/FreedomIntelligence/DeEAR_Base" target="_blank">Model</a>
 </h4>
 </div>
 
