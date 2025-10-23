@@ -243,14 +243,25 @@ audio{ width: 100%; outline: none; }
   letter-spacing: .2px;
 }
 .subtitle{
-  font-size: clamp(18px, 2.2vw, 24px); /* 原 16~22 → 18~24 */
-  line-height: 1.55;
-  max-width: 980px;                     /* 文案行宽略更宽 */
+  font-size: clamp(22px, 2.6vw, 30px);  /* 副标题更大 */
+  font-weight: 800;                      /* 更粗更有层级 */
+  line-height: 1.6;
+  letter-spacing: .2px;
+  max-width: 1040px;                     /* 行宽略放宽，视觉更稳 */
 }
 
-/* 作者与单位更容易读 */
-.authors{ font-size: 18px; line-height: 1.9; }
-.affiliations{ font-size: 16px; }
+.authors{
+  font-size: 19px;                       /* 作者行比正文大一档 */
+  font-weight: 700;                      /* 明显加粗，便于扫读 */
+  line-height: 2;
+}
+
+.affiliations{
+  font-size: 17px;                       /* 机构略小于作者 */
+  font-weight: 600;                      /* 比普通正文稍粗 */
+  line-height: 1.9;
+  color: var(--muted);
+}
 
 /* 顶部卡片内边距增大，让内容更“撑开” */
 .hero-inner{ padding: 56px 36px 36px; }
