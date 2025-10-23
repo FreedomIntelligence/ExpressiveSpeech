@@ -25,27 +25,34 @@ body {
     margin-bottom: 30px;
 }
 
+/* 主标题 (ExpressiveSpeech) */
 .paper-header h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 4em; /* 稍微增大主标题 */
+    font-weight: 600; /* 可以适当加粗 */
+    margin-bottom: 20px; /* 增加与下方标题的间距 */
 }
 
+/* 论文标题 (Decoding the Ear...) - 这是关键修改！ */
 .paper-header .subtitle {
-    font-size: 1.2em;
-    color: #555;
-    margin-bottom: 25px;
+    font-size: 1.6em;  /* 大幅增加论文标题的字号 */
+    color: #495057;   /* 使用一个深灰色，与主标题区分 */
+    margin-bottom: 35px; /* 增加与下方作者列表的间距 */
+    line-height: 1.4;    /* 增加行高，如果标题换行会更好看 */
 }
 
+/* 作者列表 */
 .paper-header .authors {
-    font-size: 1.1em;
-    line-height: 1.6;
-    margin-bottom: 15px;
+    font-size: 1.2em;  /* 增大作者字号 */
+    line-height: 1.7;    /* 增加行高，让名字不拥挤 */
+    margin-bottom: 20px; /* 增加与下方机构的间距 */
 }
 
+/* 机构列表 */
 .paper-header .affiliations {
-    font-size: 0.9em;
-    color: #6c757d;
-    margin-bottom: 30px;
+    font-size: 1em;    /* 增大机构字号 */
+    color: #6c757d;   /* 使用柔和的灰色 */
+    margin-bottom: 35px; /* 增加与下方按钮组的间距 */
+    line-height: 1.6;
 }
 
 /* 按钮组 */
@@ -72,7 +79,7 @@ body {
 }
 
 .button i {
-    margin-right: 8px; /* 图标和文字的间距 */
+    margin-right: 8px;
 }
 
 /* Demo演示区域 */
