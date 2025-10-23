@@ -1,101 +1,123 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ExpressiveSpeech Project</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- 引入一个图标库，用于按钮前的小图标 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ExpressiveSpeech / DeEAR</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- 图标库 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    referrerpolicy="no-referrer"
+  />
+  <!-- 可选：更优雅的英文字体（不阻塞渲染，加载到就用） -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="page">
 
-    <div class="container">
-        <!-- 论文介绍部分 -->
-        <header class="paper-header">
-            <!-- 项目名称 -->
-            <h1>DeEAR</h1>
-            
-            <!-- 论文标题 -->
-            <p class="subtitle">Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment</p>
-            
-            <!-- 作者列表 -->
-            <p class="authors">
-                Zhiyu Lin<sup>1, 2</sup>,
-                Jingwen Yang<sup>1, 2</sup>,
-                Jiale Zhao<sup>2</sup>,
-                Meng Liu<sup>2</sup>,
-                Sunzhu Li<sup>2</sup>,
-                Benyou Wang<sup>1, *</sup>
-            </p>
+    <!-- 顶部 Hero 区 -->
+    <header class="hero">
+      <div class="hero-inner">
+        <h1 class="title">DeEAR</h1>
+        <p class="subtitle">
+          Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference
+          Through Efficient Alignment
+        </p>
 
-            <!-- 机构列表 -->
-            <p class="affiliations">
-                <sup>1</sup>The Chinese University of Hong Kong, Shenzhen, China <br>
-                <sup>2</sup>Li Auto Inc., China
-            </p>
+        <p class="authors">
+          Zhiyu Lin<sup>1, 2</sup>, Jingwen Yang<sup>1, 2</sup>, Jiale Zhao<sup>2</sup>,
+          Meng Liu<sup>2</sup>, Sunzhu Li<sup>2</sup>, Benyou Wang<sup>1, *</sup>
+        </p>
 
-            <div class="button-group">
-                <!-- 请将 # 替换成您的实际链接 -->
-                <a href="https://github.com/FreedomIntelligence/ExpressiveSpeech" class="button" target="_blank"><i class="fab fa-github"></i> Github</a>
-                <a href="#" class="button" target="_blank"><i class="fas fa-file-alt"></i> Paper</a>
-                <a href="#" class="button" target="_blank"><i class="fas fa-brain"></i> Model</a>
-                <a href="#" class="button" target="_blank"><i class="fas fa-database"></i> Dataset</a>
+        <p class="affiliations">
+          <sup>1</sup>The Chinese University of Hong Kong, Shenzhen, China &nbsp;&nbsp;|&nbsp;&nbsp;
+          <sup>2</sup>Li Auto Inc., China
+        </p>
+
+        <nav class="cta-group" aria-label="resource links">
+          <a class="cta" target="_blank" href="https://github.com/FreedomIntelligence/ExpressiveSpeech">
+            <i class="fa-brands fa-github"></i><span>Github</span>
+          </a>
+          <a class="cta" target="_blank" href="#">
+            <i class="fa-solid fa-file-lines"></i><span>Paper</span>
+          </a>
+          <a class="cta" target="_blank" href="#">
+            <i class="fa-solid fa-brain"></i><span>Model</span>
+          </a>
+          <a class="cta" target="_blank" href="#">
+            <i class="fa-solid fa-database"></i><span>Dataset</span>
+          </a>
+        </nav>
+      </div>
+      <!-- 底部分隔阴影 -->
+      <div class="hero-sep"></div>
+    </header>
+
+    <main class="main">
+      <section class="section">
+        <h2 class="section-title">Demos</h2>
+
+        <!-- 表格化 Grid（列头固定一行，每个 demo 是一行） -->
+        <div class="demo-table" role="table" aria-label="DeEAR demos">
+          <!-- 列头 -->
+          <div class="demo-row demo-head" role="row">
+            <div class="cell" role="columnheader">Audio inputs</div>
+            <div class="cell" role="columnheader">Transcript</div>
+            <div class="cell" role="columnheader">Paralinguistic</div>
+            <div class="cell" role="columnheader">Audio outputs</div>
+            <div class="cell" role="columnheader">Text outputs</div>
+          </div>
+
+          <!-- Row 1 -->
+          <div class="demo-row" role="row">
+            <div class="cell" role="cell">
+              <audio controls src="audio/input_sample_1.wav"></audio>
             </div>
-        </header>
-
-        <!-- Demo演示部分 -->
-        <section class="demo-section">
-            <h2>Demos</h2>
-            
-            <div class="demo-grid">
-                <!-- 列标题 -->
-                <div class="grid-header">Audio inputs</div>
-                <div class="grid-header">Transcript</div>
-                <div class="grid-header">Paralinguistic</div>
-                <div class="grid-header">Audio outputs</div>
-                <div class="grid-header">Text outputs</div>
-
-                <!-- 第一个Demo示例 -->
-                <div class="grid-item">
-                    <!-- 请将 src 替换成您的音频文件路径 -->
-                    <audio controls src="audio/input_sample_1.wav"></audio>
-                </div>
-                <div class="grid-item">
-                    <p>怎么样怎么办啊，马上轮到我上台发言了，好紧张。</p>
-                </div>
-                <div class="grid-item">
-                    <p>焦虑, 成年, 女性</p>
-                </div>
-                 <div class="grid-item">
-                    <!-- 请将 src 替换成您的音频文件路径 -->
-                    <audio controls src="audio/output_sample_1.wav"></audio>
-                </div>
-                <div class="grid-item">
-                    <p>别慌，深呼吸，慢慢来，你准备的很充分。上台后先微笑，再开场白一步步来。实在紧张就喝口水，没人会怪你。</p>
-                </div>
-
-                <!-- 第二个Demo示例 (您可以复制这段来添加更多) -->
-                <div class="grid-item">
-                    <audio controls src="audio/input_sample_2.wav"></audio>
-                </div>
-                <div class="grid-item">
-                    <p>这是第二个示例的输入文本。</p>
-                </div>
-                <div class="grid-item">
-                    <p>开心, 青年, 男性</p>
-                </div>
-                 <div class="grid-item">
-                    <audio controls src="audio/output_sample_2.wav"></audio>
-                </div>
-                <div class="grid-item">
-                    <p>这是第二个示例的输出文本。</p>
-                </div>
-
+            <div class="cell" role="cell">
+              怎么样怎么办啊，马上轮到我上台发言了，好紧张。
             </div>
-        </section>
+            <div class="cell" role="cell">
+              焦虑 · 成年 · 女性
+            </div>
+            <div class="cell" role="cell">
+              <audio controls src="audio/output_sample_1.wav"></audio>
+            </div>
+            <div class="cell" role="cell">
+              别慌，深呼吸，慢慢来，你准备的很充分。上台后先微笑，再开场白一步步来。实在紧张就喝口水，没人会怪你。
+            </div>
+          </div>
 
-    </div>
+          <!-- Row 2 -->
+          <div class="demo-row" role="row">
+            <div class="cell" role="cell">
+              <audio controls src="audio/input_sample_2.wav"></audio>
+            </div>
+            <div class="cell" role="cell">
+              这是第二个示例的输入文本。
+            </div>
+            <div class="cell" role="cell">
+              开心 · 青年 · 男性
+            </div>
+            <div class="cell" role="cell">
+              <audio controls src="audio/output_sample_2.wav"></audio>
+            </div>
+            <div class="cell" role="cell">
+              这是第二个示例的输出文本。
+            </div>
+          </div>
 
+          <!-- 如需更多，复制上一段 demo-row 即可 -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2025 ExpressiveSpeech Project</span>
+    </footer>
+  </div>
 </body>
 </html>
