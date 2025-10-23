@@ -338,3 +338,27 @@ audio{
 .cta .icon{
   filter: brightness(0) invert(1);
 }
+
+/* 统一图标“占位宽度 + 垂直居中 + 与文本的固定间距” */
+.cta .glyph{
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  line-height: 1;        /* 消除基线落差 */
+  vertical-align: middle;
+}
+
+/* 字体类图标（FA 和 Emoji）的字号统一到同一视觉尺寸 */
+.cta .glyph:not(img){     /* <i> 和 <span>（emoji） */
+  font-size: 18px;
+}
+
+/* 图片图标（arXiv SVG）适配容器 */
+.cta img.glyph{
+  object-fit: contain;
+  filter: none;          /* 用的是白色 SVG，无需反相 */
+}
