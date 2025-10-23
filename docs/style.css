@@ -157,7 +157,7 @@ body{
   box-shadow: var(--shadow-sm);
   padding: 10px 12px;
   display: grid;
-  grid-template-columns: 1.1fr 1fr .9fr 1.1fr 1.6fr;
+  grid-template-columns: 1.2fr 1fr 1fr;
   font-weight: 700;
   font-size: 14px;
   color: var(--brand);
@@ -166,7 +166,7 @@ body{
 /* 数据行 */
 .demo-row{
   display: grid;
-  grid-template-columns: 1.1fr 1fr .9fr 1.1fr 1.6fr;
+  grid-template-columns: 1.2fr 1fr 1fr;
   gap: 0;
   border: 1px solid var(--border);
   border-radius: 12px;
