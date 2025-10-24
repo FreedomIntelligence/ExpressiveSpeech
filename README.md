@@ -78,3 +78,17 @@ python inference.py \
 ## Supplementary Material
 
 The [`Supplementary Material`](./Supplementary%20Material/) folder in this repository provides additional details for the experiments presented in our paper. This includes comprehensive information on the experimental setup and the data materials used.
+
+
+## ✍️ Citation
+
+If you use our work in your research, please cite the following paper:
+
+```bibtex
+@article{lin2025decoding,
+  title={Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment},
+  author={Lin, Zhiyu and Yang, Jingwen and Zhao, Jiale and Liu, Meng and Li, Sunzhu and Wang, Benyou},
+  journal={arXiv preprint arXiv:2510.20513},
+  year={2025}
+}
+```
