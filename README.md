@@ -74,7 +74,7 @@ python inference.py \
     --batch_size 64
 ```
 
-## TODO
+## :label: TODO 
 
 - [ ] Fine-tune an open-source S2S model using the high-expressiveness dataset curated by DeEAR to validate its impact on improving speech model expressiveness.
 
