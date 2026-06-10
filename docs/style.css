@@ -533,6 +533,42 @@ audio{
   max-width: 420px;
 }
 
+.score-demo-table .demo-head,
+.score-demo-table .demo-row{
+  grid-template-columns: .65fr 1.25fr 2.1fr;
+}
+
+.s2s-demo-table .demo-head,
+.s2s-demo-table .demo-row{
+  grid-template-columns: 1.35fr 1fr 1fr;
+}
+
+.score-demo-table .cell,
+.s2s-demo-table .cell{
+  min-width: 0;
+}
+
+.score-cell{
+  flex-direction: column;
+  gap: 9px;
+}
+
+.score-cell .sub-scores{
+  width: 100%;
+}
+
+.text-cell{
+  justify-content: flex-start;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.score-demo-table audio,
+.s2s-demo-table audio{
+  width: 100%;
+  min-width: 180px;
+}
+
 @media (prefers-color-scheme: dark){
   .level-tag.low{
     background: rgba(127, 29, 29, .42);
@@ -574,5 +610,28 @@ audio{
 
   .data-table audio{
     min-width: 200px;
+  }
+
+  .score-demo-table .demo-head,
+  .score-demo-table .demo-row,
+  .s2s-demo-table .demo-head,
+  .s2s-demo-table .demo-row{
+    grid-template-columns: 1fr;
+  }
+
+  .score-demo-table .cell,
+  .s2s-demo-table .cell{
+    border-right: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .score-demo-table .cell:first-child,
+  .s2s-demo-table .cell:first-child{
+    border-top: none;
+  }
+
+  .score-demo-table audio,
+  .s2s-demo-table audio{
+    min-width: 0;
   }
 }
