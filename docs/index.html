@@ -69,106 +69,262 @@
       <section class="section">
         <h2 class="section-title">Demos</h2>
 
-        <!-- 表格化 Grid（列头固定一行，每个 demo 是一行） -->
-        <div class="demo-table" role="table" aria-label="DeEAR demos">
-        <!-- 列头 -->
-        <div class="demo-row demo-head" role="row">
-            <div class="cell" role="columnheader">Input text</div>
-            <div class="cell" role="columnheader">Output (BaseModel)</div>
-            <div class="cell" role="columnheader">Output (Expressive-FT)</div>
+        <div class="demo-intro">
+          <p>
+            This page provides audio demonstrations to help readers intuitively understand the
+            <strong>DeEAR</strong> framework proposed in our paper.
+          </p>
+          <p>The page contains two parts:</p>
+          <ol>
+            <li>DeEAR Score Examples: Audio samples across High, Medium, and Low expressiveness levels.</li>
+            <li>S2S Model Fine-Tuning: Comparison before and after fine-tuning (Section 4.3).</li>
+          </ol>
         </div>
 
-        <!-- Row 1 -->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            嗯嗯，听起来不错，我会试试看的。哎，但我还是觉得时间不够用。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_24626_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_24626_sft.wav"></audio>
-            </div>
+        <div class="demo-part">
+          <h3 class="part-title">Part 1: DeEAR Score Examples</h3>
+          <div class="table-scroll">
+            <table class="data-table score-table">
+              <thead>
+                <tr>
+                  <th>Level</th>
+                  <th>Audio Sample</th>
+                  <th>DeEAR Scores (0-100)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="level-tag low">Low</span></td>
+                  <td><audio controls src="audio_exp_samples/0-2/audio_1.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 3.43</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>53.72</strong></span>
+                        <span>Pros: <strong>49.00</strong></span>
+                        <span>Spon: <strong>38.52</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag low">Low</span></td>
+                  <td><audio controls src="audio_exp_samples/0-2/Supplementary%20Material_Experiment4.2_Gemini_2.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 4.21</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>38.41</strong></span>
+                        <span>Pros: <strong>32.83</strong></span>
+                        <span>Spon: <strong>34.66</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag low">Low</span></td>
+                  <td><audio controls src="audio_exp_samples/2-4/Supplementary%20Material_Experiment4.2_Gemini_14.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 24.52</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>33.35</strong></span>
+                        <span>Pros: <strong>23.47</strong></span>
+                        <span>Spon: <strong>70.09</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag low">Low</span></td>
+                  <td><audio controls src="audio_exp_samples/2-4/Supplementary%20Material_Experiment4.2_stepfun_8.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 29.82</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>29.51</strong></span>
+                        <span>Pros: <strong>26.05</strong></span>
+                        <span>Spon: <strong>73.69</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag medium">Medium</span></td>
+                  <td><audio controls src="audio_exp_samples/2-4/Supplementary%20Material_Experiment4.2_Sesame_5.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 36.46</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>30.23</strong></span>
+                        <span>Pros: <strong>22.17</strong></span>
+                        <span>Spon: <strong>82.84</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag medium">Medium</span></td>
+                  <td><audio controls src="audio_exp_samples/4-6/Supplementary%20Material_Experiment4.2_Sesame_1.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 52.15</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>54.51</strong></span>
+                        <span>Pros: <strong>50.59</strong></span>
+                        <span>Spon: <strong>93.88</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag medium">Medium</span></td>
+                  <td><audio controls src="audio_exp_samples/4-6/Supplementary%20Material_Experiment4.2_stepfun_10.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 55.22</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>62.18</strong></span>
+                        <span>Pros: <strong>60.02</strong></span>
+                        <span>Spon: <strong>92.30</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag high">High</span></td>
+                  <td><audio controls src="audio_exp_samples/6-8/012_speaker2_131s_140s.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 74.05</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>77.91</strong></span>
+                        <span>Pros: <strong>71.00</strong></span>
+                        <span>Spon: <strong>100.00</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag high">High</span></td>
+                  <td><audio controls src="audio_exp_samples/6-8/004_speaker1_94s_105s.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 74.23</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>74.62</strong></span>
+                        <span>Pros: <strong>75.50</strong></span>
+                        <span>Spon: <strong>99.62</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag high">High</span></td>
+                  <td><audio controls src="audio_exp_samples/6-8/059_speaker1_290s_295s.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 80.06</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>92.63</strong></span>
+                        <span>Pros: <strong>66.50</strong></span>
+                        <span>Spon: <strong>95.32</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag high">High</span></td>
+                  <td><audio controls src="audio_exp_samples/8-10/007_speaker1_28s_32s.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 96.43</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>86.93</strong></span>
+                        <span>Pros: <strong>71.50</strong></span>
+                        <span>Spon: <strong>94.59</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag high">High</span></td>
+                  <td><audio controls src="audio_exp_samples/8-10/007_speaker2_82s_97s.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 98.46</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>100.00</strong></span>
+                        <span>Pros: <strong>72.50</strong></span>
+                        <span>Spon: <strong>96.98</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="level-tag high">High</span></td>
+                  <td><audio controls src="audio_exp_samples/8-10/011_speaker2_152s_160s.wav"></audio></td>
+                  <td>
+                    <div class="score-card">
+                      <div class="overall-score">Overall (expressive): 99.08</div>
+                      <div class="sub-scores">
+                        <span>Emo: <strong>96.79</strong></span>
+                        <span>Pros: <strong>70.50</strong></span>
+                        <span>Spon: <strong>95.54</strong></span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        <!-- Row 2 -->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            谢谢你的关心和建议，我会努力调整自己的状态，争取找到舒适感受的方式。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_21215_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_21215_sft.wav"></audio>
-            </div>
-        </div>
-
-        <!-- Row 3 -->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            你当然是我师傅啦。一日为师，终身为师。 师傅。你这些年过得好吗？ 哎呀，你看我问的。看海天悦这么大的规模，就知道师傅这几年一定过得很好啊。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_34653_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_34653_sft.wav"></audio>
-            </div>
-        </div>
-
-        <!-- Row 4 -->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            多宝啊，这不是这两天西安鸿乐园那边事儿多吗？他帮忙去了。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_9316_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_9316_sft.wav"></audio>
-            </div>
-        </div>
-
-        <!-- Row 5 -->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            那倒是您的厨艺可是大厨级别的。 那我吃了啊。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_18833_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_18833_sft.wav"></audio>
-            </div>
-        </div>
-
-        <!-- Row 6 -->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            我们什么时候去呢？我这个周末我没事。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_28148_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_28148_sft.wav"></audio>
-            </div>
-        </div>
-
-        <!-- Row 7-->
-        <div class="demo-row" role="row">
-            <div class="cell" role="cell">
-            哎呦，我是真戒了，洛林坚持让我借了。
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_1879_base.wav"></audio>
-            </div>
-            <div class="cell" role="cell">
-            <audio controls src="audio/sampled_1879_sft.wav"></audio>
-            </div>
-        </div>
-
+        <div class="demo-part">
+          <h3 class="part-title">Part 2: S2S Model Fine-Tuning</h3>
+          <div class="table-scroll">
+            <table class="data-table s2s-table">
+              <thead>
+                <tr>
+                  <th>Input text</th>
+                  <th>Output (S2S-Base)</th>
+                  <th>Output (S2S-FT)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-cell">嗯嗯，听起来不错，我会试试看的。哎，但我还是觉得时间不够用。</td>
+                  <td><audio controls src="audio/sampled_24626_base.wav"></audio></td>
+                  <td><audio controls src="audio/sampled_24626_sft.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td class="text-cell">你当然是我师傅啦。一日为师，终身为师。 师傅。你这些年过得好吗？ 哎呀，你看我问的。看海天悦这么大的规模，就知道师傅这几年一定过得很好啊。</td>
+                  <td><audio controls src="audio/sampled_34653_base.wav"></audio></td>
+                  <td><audio controls src="audio/sampled_34653_sft.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td class="text-cell">多宝啊，这不是这两天西安鸿乐园那边事儿多吗？他帮忙去了。</td>
+                  <td><audio controls src="audio/sampled_9316_base.wav"></audio></td>
+                  <td><audio controls src="audio/sampled_9316_sft.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td class="text-cell">那倒是您的厨艺可是大厨级别的。 那我吃了啊。</td>
+                  <td><audio controls src="audio/sampled_18833_base.wav"></audio></td>
+                  <td><audio controls src="audio/sampled_18833_sft.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td class="text-cell">我们什么时候去呢？我这个周末我没事。</td>
+                  <td><audio controls src="audio/sampled_28148_base.wav"></audio></td>
+                  <td><audio controls src="audio/sampled_28148_sft.wav"></audio></td>
+                </tr>
+                <tr>
+                  <td class="text-cell">哎呦，我是真戒了，洛林坚持让我戒了。</td>
+                  <td><audio controls src="audio/sampled_1879_base.wav"></audio></td>
+                  <td><audio controls src="audio/sampled_1879_sft.wav"></audio></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </section>
     </main>

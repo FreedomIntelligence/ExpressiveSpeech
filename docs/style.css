@@ -362,3 +362,217 @@ audio{
   object-fit: contain;
   filter: none;          /* 用的是白色 SVG，无需反相 */
 }
+
+/* ============ DeEAR demo tables ============ */
+.demo-intro{
+  max-width: 980px;
+  margin: 0 auto 28px;
+  color: var(--brand-2);
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.demo-intro p{
+  margin: 0 0 10px;
+}
+
+.demo-intro ol{
+  margin: 8px 0 0;
+  padding-left: 24px;
+}
+
+.demo-intro li{
+  margin: 6px 0;
+}
+
+.demo-part{
+  margin-top: 34px;
+}
+
+.part-title{
+  margin: 0 0 16px;
+  color: var(--brand);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.table-scroll{
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+}
+
+.data-table{
+  width: 100%;
+  min-width: 880px;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.data-table th{
+  padding: 18px 16px;
+  background: color-mix(in srgb, var(--card) 82%, var(--bg));
+  border-bottom: 2px solid var(--border);
+  color: var(--brand);
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.data-table td{
+  padding: 22px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-size: 15.5px;
+  line-height: 1.65;
+  text-align: center;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
+}
+
+.data-table tr:last-child td{
+  border-bottom: none;
+}
+
+.score-table th:nth-child(1),
+.score-table td:nth-child(1){
+  width: 15%;
+}
+
+.score-table th:nth-child(2),
+.score-table td:nth-child(2){
+  width: 40%;
+}
+
+.score-table th:nth-child(3),
+.score-table td:nth-child(3){
+  width: 45%;
+}
+
+.s2s-table th:nth-child(1),
+.s2s-table td:nth-child(1){
+  width: 34%;
+}
+
+.s2s-table th:nth-child(2),
+.s2s-table td:nth-child(2),
+.s2s-table th:nth-child(3),
+.s2s-table td:nth-child(3){
+  width: 33%;
+}
+
+.text-cell{
+  text-align: left;
+}
+
+.level-tag{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 86px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.level-tag.low{
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.level-tag.medium{
+  background: #ffedd5;
+  color: #9a3412;
+}
+
+.level-tag.high{
+  background: #dcfce7;
+  color: #166534;
+}
+
+.score-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+.overall-score{
+  padding: 8px 16px;
+  border: 1px solid color-mix(in srgb, var(--accent) 28%, var(--border));
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 9%, var(--card));
+  color: var(--brand);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.sub-scores{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+  color: var(--muted);
+  font-size: 14.5px;
+}
+
+.sub-scores strong{
+  color: var(--text);
+}
+
+.data-table audio{
+  width: 100%;
+  min-width: 220px;
+  max-width: 420px;
+}
+
+@media (prefers-color-scheme: dark){
+  .level-tag.low{
+    background: rgba(127, 29, 29, .42);
+    color: #fecaca;
+  }
+
+  .level-tag.medium{
+    background: rgba(124, 45, 18, .45);
+    color: #fed7aa;
+  }
+
+  .level-tag.high{
+    background: rgba(20, 83, 45, .45);
+    color: #bbf7d0;
+  }
+}
+
+@media (max-width: 860px){
+  .demo-intro{
+    font-size: 15px;
+  }
+
+  .part-title{
+    font-size: 21px;
+  }
+
+  .table-scroll{
+    border-radius: 12px;
+  }
+
+  .data-table{
+    min-width: 760px;
+  }
+
+  .data-table th,
+  .data-table td{
+    padding: 16px 12px;
+  }
+
+  .data-table audio{
+    min-width: 200px;
+  }
+}
