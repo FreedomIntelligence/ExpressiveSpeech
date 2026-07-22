@@ -4,6 +4,8 @@
 
 ## Decoding the Ear: A Framework for Objectifying Expressiveness from Human Preference Through Efficient Alignment
 
+🎉 **Accepted as an Oral Presentation at Interspeech 2026.**
+
 </div>
 
 <div align="center">
@@ -11,6 +13,11 @@
   🌐 <a href="https://freedomintelligence.github.io/ExpressiveSpeech/" target="_blank">Project</a> | <a href="https://arxiv.org/pdf/2510.20513" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/ArXiv_logo_2022.svg" alt="ArXiv Paper" height="12"> Paper</a> | 🤗 <a href="https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech" target="_blank">Dataset</a> | 🤗 <a href="https://huggingface.co/FreedomIntelligence/DeEAR_Base" target="_blank">Model</a>
 </h4>
 </div>
+
+## 📰 News
+
+- **2026-07**: DeEAR was accepted as an **Oral Presentation** at **Interspeech 2026**!
+- **2025-10**: We released the ExpressiveSpeech dataset and DeEAR model.
 
 ## 📖 Introduction
 
