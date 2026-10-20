@@ -91,6 +91,17 @@ python inference.py \
 The [`Supplementary Material`](./Supplementary%20Material/) folder in this repository provides additional details for the experiments presented in our paper. This includes comprehensive information on the experimental setup and the data materials used.
 
 
+## License
+
+The **source code** in this repository and the **XGBoost fusion model** at [`models/XGBoost/xgboost_model.json`](./models/XGBoost/xgboost_model.json) are released under the [Apache License, Version 2.0](./LICENSE). The XGBoost fusion model may be used, modified, and redistributed under the terms of Apache-2.0.
+
+The following materials are **not covered by this Apache-2.0 grant**:
+
+- The [ExpressiveSpeech dataset on Hugging Face](https://huggingface.co/datasets/FreedomIntelligence/ExpressiveSpeech), which is separately released under **CC BY-NC-SA 4.0** and retains its non-commercial restrictions.
+- Research records and materials in [`Supplementary Material/`](./Supplementary%20Material/), the images in [`assets/`](./assets/), and audio examples in `docs/audio/` and `docs/audio_exp_samples/`. Their applicable rights and any third-party terms remain unchanged.
+
+The [DeEAR_Base model weights on Hugging Face](https://huggingface.co/FreedomIntelligence/DeEAR_Base) are separately released under Apache-2.0.
+
 ## ✍️ Citation
 
 If you use our work in your research, please cite the following paper:
